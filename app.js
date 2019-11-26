@@ -13,7 +13,7 @@ const port = 3000;
 
 const ROWS_PER_SECOND = 64;
 const NUM_OF_CHANNELS = 16;
-const NUM_OF_TEST_CASES = 10;
+const NUM_OF_TEST_CASES = 3;
 
 function getEegCase(math, seconds) {
   return {
