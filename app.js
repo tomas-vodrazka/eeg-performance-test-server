@@ -13,11 +13,11 @@ const port = 3000;
 
 const ROWS_PER_SECOND = 64;
 const NUM_OF_CHANNELS = 16;
-const NUM_OF_TEST_CASES = 3;
+const NUM_OF_TEST_CASES = 1;
 
 function getEegCase(math, seconds) {
   return {
-    envelope: math.random([Math.round(seconds * ROWS_PER_SECOND), 1]),
+    envelope: math.random([Math.round(seconds * ROWS_PER_SECOND)]),
     eeg: math.random([Math.round(seconds * ROWS_PER_SECOND), NUM_OF_CHANNELS])
   };
 }
